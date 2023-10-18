@@ -1,0 +1,203 @@
+.login-container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+.welcome-part {
+     background-color: var(--primary-color);
+     /* background-image: url(../imgs/loginPic1.png); */
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-blend-mode: color;
+    padding-top:60px ;
+     
+}
+
+.login-section {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    height: 80vh;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+    
+}
+
+.login-zone {
+    padding: 20px;
+}
+.welcome-word {
+    text-align: left;
+}
+
+.welcome-part .welcome-text {
+    text-align: justify;
+    flex-direction: column;
+    margin:5px;
+    padding: 28px;
+    color: white;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    backdrop-filter: blur(100%) ;
+  
+    
+
+}
+
+.welcome-text .welcome-word {
+    padding-bottom:40px ;
+    font-size: 40px;
+}
+
+.login-zone .logo {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.logo .a  {
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--primary-color);
+}
+.logo .grade {
+    font-weight: 800;
+}
+.instructions {
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--body-color);
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 30px;
+    color: rgb(166, 160, 160);
+}
+.warning-icon {
+    border: 5px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+   
+    height: 30px;
+    padding: 2px;
+    width: 30px;
+    
+}
+
+.login-zone input, .login-zone button {
+    width: 80%;
+    margin-top: 6px;
+    padding: 5px;
+
+}
+
+.log-info {
+    margin-top: 10px;
+}
+
+label ::after {
+    content: normal;
+}
+
+input:focus{
+    border: 1px solid var(--blue);
+    
+}
+
+.login-button button {
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.made {
+  margin-top: 15px;
+}
+.forgotten {
+    padding-top: 10px;
+    color: var(--primary-color);
+    cursor:pointer;
+    animation: myAni 10s infinite;
+    
+}
+
+.forgotten :hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .show.animate {
+    animation: show 0.9s ease-in-out;
+  }
+  
+@keyframes show {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  /* 
+  Mobile Version 
+  */
+  @media screen and (max-width: 600px){
+    .login-container {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        
+    }
+    .login-section .welcome-part{
+        display: none;
+        
+    }
+
+    .instructions {
+        padding-bottom: 10px;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--body-color);
+        width: 80%;
+        padding: 5px;
+        margin-bottom: 30px;
+        width: 400px;
+    
+    
+    }
+     
+    .login-section {
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+        width: 70%;
+        height: 90vh;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 50% 50%;
+        gap: 40px;
+        
+    }
+
+    .login-zone input, .login-zone button {
+        width: 300px;
+        margin-top: 6px;
+        padding: 5px;
+    
+    }
+
+
+}

@@ -1,0 +1,30 @@
+.overviews {
+    gap: 30px;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+
+}
+.overview {
+    display: flex;
+    gap: 10px;
+    background-color: var(--side-bar-color);
+    padding: 12px;
+    border-radius: 5px;
+    align-items: center;
+    align-content: center;
+}
+.icon img{
+    width: 100%;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+
+.title-number .title {
+    color: var(--text-color);
+}
+
+.number {
+    font-weight: bolder;
+}
